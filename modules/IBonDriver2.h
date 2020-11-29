@@ -20,7 +20,7 @@ public:
 
 
 // インスタンス生成メソッド
-extern "C" __declspec(dllimport) IBonDriver * CreateBonDriver();
+extern "C" IBonDriver * CreateBonDriver();
 
 class IBonDriver2 : public IBonDriver
 {
