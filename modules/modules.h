@@ -12,7 +12,7 @@ extern module_def_t mod_bondriver;
 extern module_def_t mod_b25decoder;
 #else
 #ifdef __linux__
-extern module_def_t mod_dvb;
+extern module_def_t mod_bondriver;
 extern module_def_t mod_arib25;
 #endif
 #endif
@@ -29,7 +29,7 @@ module_def_t *static_modules[] = {
 	&mod_b25decoder,
 #else
 #ifdef __linux__
-	&mod_dvb,
+	&mod_bondriver,
 	&mod_arib25,
 #endif
 #endif
